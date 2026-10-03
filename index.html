@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="frmCadastro" name="frmCadastrar" action="" method="post">
+        <div>
+            <label for="txtNome">Nome:</label><input type="text" id="txtNome" name="txtNome" placeholder="Nome"
+                maxlength="100">
+        </div>
+
+        <div>
+            <label for="txtEmail">Email:</label><input type="email" id="txtEmail" name="txtEmail">
+        </div>
+
+        <div>
+            <label>Data de Nascimento (date): <input type="date" id="txtNascimento" name="txtNascimento"
+                    min="2026-09-22" max="2026-12-31"></label>
+        </div>
+
+        <div>
+            <label>Data de Nascimento (datetime-local): <input type="datetime-local" id="txtNascimento"
+                    name="txtNascimento" min="2026-09-22" max="2026-12-31"></label>
+        </div>
+
+        <div>
+            Área de Interesse:
+            <br>
+            <input type="checkbox" name="chkInteresse" id="chkTecnologia" value="tecnologia">
+            <label for="chkTecnologia">Tecnologia</label>
+            <input type="checkbox" name="chkCulinaria" id="chkCulinaria" value="culinaria">
+            <label for="chkCulinaria">Culinária</label>
+            <input type="checkbox" name="chkModa" id="chkModa" value="moda">
+            <label for="chkModa
+                    ">Moda</label>
+        </div>
+        <div>
+            <label for="">Período</label>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoMatutino" value="M">
+            <label for="rdoPeriodoMatutino">Período Matutino</label>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoVespertino" value="V">
+            <label for="rdoPeriodoVespertino">Período Vespertino</label>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoNoturno" value="N">
+            <label for="rdoPeriodoNoturno">Período Noturno</label>
+        </div>
+
+        <div>
+            <label for="">Estado</label>
+            <select id="uf" name="uf" required>
+                <option value="" disabled selected>Selecione</option>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="AM">Amazonas</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+               
+            </select>
+        </div>
+
+        <div>
+            Senha:<input type="password" name="txtSenha" id="txtSenha">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+<!--LABEL = serve pra ajudar pessoas com deficiencias, mas nao so isso, como da o suporte pro mouse, clicando onde nos queremos -->
+<!--PLACEHOLDER = serve pra dentro do campo, ja deixar algo escrito, pro usuario saber oq deve por-->
+<!--MAXLENGTH = limita o tamanho maximo de caracteres-->
+
+</html>
